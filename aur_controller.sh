@@ -2,6 +2,11 @@
 # FILE: aur_controller.sh
 # DESC: merge AUR activities to one script
 
+if [ $# != 1 ]; then
+    echo "Usage: $0 <op>"
+    echo "Available ops are: disable, enable, build, and clean."
+fi
+
 if [ $# == 1 ]; then
     case "$1" in
         disable)
@@ -66,6 +71,10 @@ if [ $# == 1 ]; then
             rm -rf ./AUR_BUILDER
             rm -rf ./aur_repo_x86_64
             $0 disable
+        ;;
+        *)
+            echo "Usage: $0 <op>"
+            echo "Available ops are: disable, enable, build, and clean."
         ;;
     esac
 fi
