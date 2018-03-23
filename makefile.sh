@@ -11,7 +11,6 @@ if [ ! -d "./aur_repo_x86_64" ]; then
   ./aur_controller.sh build
 fi
 
-
 cp ./configs/general_packages packages.x86_64
 if [ $# == 1 ]; then
   # if .config exists, delete it
