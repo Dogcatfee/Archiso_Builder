@@ -35,11 +35,6 @@ arch-install-scripts
 unzip
 zip
 xarchiver
-broadcom-wl
-yaourt
-package-query
-paper-icon-theme-git
-gtk-theme-arc-git
 lightdm
 lightdm-gtk-greeter
 i3
